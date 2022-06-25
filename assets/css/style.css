@@ -1,8 +1,14 @@
+/* Affects all elements */
 * {
     margin: 0;
     padding: 0;
   }
-  
+
+  body {
+    background: rgb(197, 52, 52);
+  }
+
+  /* Top of page */
   header.main-header {
     display: flex;
     align-items: center;
@@ -14,7 +20,7 @@
   header.main-header h1 {
     color: white;
   }
-  
+  /* Nav bar */
   header.main-header nav a {
     color: white;
     text-decoration: none;
@@ -22,7 +28,7 @@
     margin-left: 15px;
     font-size: 20px;
   }
-  
+  /* gives underline effect when moving cursor over navigations */
   header.main-header nav a:hover::after {
     content: '';
     position: absolute;
@@ -32,35 +38,45 @@
     height: 1px;
     background: white;
   }
-  
-  h3 {
-    margin: 5px;
+
+  h2 {
+    text-align: center;
+    font-weight: bolder;
     text-decoration: underline;
+    margin-bottom: 40px;
   }
-  
-  .article1 {
+
+  h3 {
+    font-size: 50px;
+    font-weight: bolder;
+    margin: 30px 50px;
+    display: block;
+    text-align: center;
+    color: white;
+  }
+
+  .about-me {
     display: flex;
-    flex-direction: column;
+  }
+
+  #about-me-box {
+    justify-content: flex-start;
     border-style: solid;
-    width: 30%;
-    height: 180px;
-    margin: 15px 15px 15px 5px;
- }
+    margin: 20px;
+    padding: 15px;
+  }
 
- .article2 {
-    display: flex;
+  #about-text {
+    justify-content: center;
     border-style: solid;
-    width: 800px;
-    height: 300px;
-    margin: 0px 5px 15px 5px;
- }
+    flex-wrap: wrap;
+    margin: 20px;
+  }
 
- .article2 img {
-    display: flex;
-    position: relative;
-    margin: 10px;
- }
-
-  body {
-    background: rgb(197, 52, 52);
+  @media only screen and (max-width: 600px)
+  {
+    body {
+      background: rgb(197, 52, 52)
+    }
+    
   }
