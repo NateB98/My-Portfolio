@@ -13,15 +13,16 @@
     <h1>Nate's Portfolio</h1>
     <nav>
       <a href="https://github.com/NateB98">Github</a>\
-      <a href="#">About Me</a>
-      <a href="#">My Work</a>
-      <a href="#">Contact</a>
+      <a href="#about-me-box">About Me</a>
+      <a href="#my-work">My Work</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
   <!-- The middle of the page including all the main content of the page -->
   <main>
-    <section>
-      <img src="assets/images/Photo of me.JPG" alt="Photo of me">
+    <section id="hero">
+        <img id="me" src="assets/images/Photo of me.JPG" alt="Photo of me">
+        <img id="quarry-hill" src="assets/images/Quarry-hill.jpg" alt="Customized photo of me">
     </section>
 
     <h2>Nate Brengman</h2>
@@ -36,51 +37,59 @@
         Labore illum maxime numquam repudiandae laudantium. Itaque, odio. Corporis, fuga libero!</p>
       </div>
     </article>
-    
-    <article class="projects">
-      <div class="title-boxes">
+
+     <div id="my-work">
         <h4>My Work</h4>
       </div>
-  
+    <article class="projects">
+      
       <div id="project1">
-        <img src="https://api.lorem.space/image/movie?w=150&h=220" href="https://api.lorem.space/image/movie?w=150&h=220">
-      </div>
-      <div class="descriptions">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        <div class="projects-img">
+          <div class="project-titles">Project 1</div>
+          <img src="https://api.lorem.space/image/movie?w=150&h=220" href="https://api.lorem.space/image/movie?w=150&h=220">
+        </div>
+        <div class="descriptions">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
           Doloribus repellendus iusto quod ipsa nobis, facere aliquam tempore aspernatur nam.
           Labore illum maxime numquam repudiandae laudantium. Itaque, odio. Corporis, fuga libero!</p>
+        </div>
       </div>
 
       <div id="project2">
-        <img src="https://api.lorem.space/image/movie?w=150&h=220" href="https://api.lorem.space/image/movie?w=150&h=220">
-      </div>
-      <div class="descriptions">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        <div class="projects-img">
+          <div class="project-titles">Project 2</div>
+          <img src="https://api.lorem.space/image/movie?w=150&h=220" href="https://api.lorem.space/image/movie?w=150&h=220">
+        </div>
+        <div class="descriptions">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
           Doloribus repellendus iusto quod ipsa nobis, facere aliquam tempore aspernatur nam.
           Labore illum maxime numquam repudiandae laudantium. Itaque, odio. Corporis, fuga libero!</p>
+        </div>
       </div>
 
       <div id="project3">
-        <img src="https://api.lorem.space/image/movie?w=150&h=220" href="https://api.lorem.space/image/movie?w=150&h=220">
-      </div>
-      <div class="descriptions">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        <div class="projects-img">
+          <div class="project-titles">Project 3</div>
+          <img src="https://api.lorem.space/image/movie?w=150&h=220" href="https://api.lorem.space/image/movie?w=150&h=220">
+        </div>
+        <div class="descriptions">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
           Doloribus repellendus iusto quod ipsa nobis, facere aliquam tempore aspernatur nam.
           Labore illum maxime numquam repudiandae laudantium. Itaque, odio. Corporis, fuga libero!</p>
+        </div>
       </div>
 
     </article>
   </main>
 </body>
   <!-- Bottom of the page including the contact info -->
-  <footer>
-    <div class="title-boxes">
+    <div id="contact">
       <h5>Contact Me</h5>
     </div>
+  <footer class="footer">
     <ul>
       <li>507-990-7167</li>
       <li>nathanbrengman@gmail.com</li>
-      
     </ul>
   
   </footer>
